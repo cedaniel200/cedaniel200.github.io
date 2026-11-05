@@ -1178,6 +1178,22 @@ h3 {
   color: var(--accent);
 }
 
+.legal-brand {
+  margin-bottom: 4px;
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.legal-role {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
 .lang-switch {
   display: flex;
   gap: 8px;
