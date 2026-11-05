@@ -1,11 +1,1 @@
-# app-ads.txt — TechCodeTest
-#
-# Este archivo es un marcador de posición. No contiene un publisher ID real.
-#
-# Para autorizar inventario de AdMob, pega aquí la línea exacta que muestra la
-# consola de AdMob (Apps > app-ads.txt). El formato de referencia es:
-#
-# google.com, pub-PUBLISHER_ID, DIRECT, f08c47fec0942fa0
-#
-# Sustituye PUBLISHER_ID por el identificador de tu cuenta. No publiques este
-# archivo con un identificador de ejemplo.
+google.com, pub-8633743206174918, DIRECT, f08c47fec0942fa0
