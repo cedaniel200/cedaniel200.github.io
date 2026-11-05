@@ -15,6 +15,7 @@ Sitio estático de TechCodeTest: consultoría de software y división móvil. Es
 ├── terms/index.html            # Términos de uso (borrador)
 ├── assets/styles.css
 ├── assets/icons/favicon.svg
+├── assets/icons/monogram.svg
 ├── app-ads.txt                 # Marcador de posición para AdMob
 ├── robots.txt
 ├── sitemap.xml
