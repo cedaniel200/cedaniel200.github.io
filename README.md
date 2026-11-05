@@ -43,6 +43,10 @@ El texto de la política de privacidad es una copia del documento publicado en
 `https://raw.githubusercontent.com/cedaniel200/privacy-policy/main/index.html`, con el nombre
 comercial, la fecha y el contacto actualizados. No edites su contenido legal sin aprobación.
 
+## Notas internas
+
+Términos: borrador revisado por el usuario; no constituye asesoría legal.
+
 ## Publicación
 
 GitHub Pages sirve la raíz de la rama `main`. No hay paso de compilación: los archivos se publican
