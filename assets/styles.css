@@ -584,6 +584,37 @@ h3 {
   color: #5eead4;
 }
 
+/* 404 */
+
+.not-found {
+  padding-block: clamp(64px, 10vw, 128px);
+  border-bottom: 1px solid var(--border);
+  background:
+    radial-gradient(
+      ellipse 60% 60% at 78% 18%,
+      rgba(45, 212, 191, 0.10),
+      transparent 65%
+    ),
+    linear-gradient(180deg, var(--surface-alt), var(--bg));
+}
+
+.not-found-inner {
+  max-width: 760px;
+}
+
+.not-found-code {
+  margin-top: 24px;
+  color: var(--accent);
+  font-size: clamp(5.5rem, 18vw, 11rem);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 0.85;
+}
+
+.not-found h1 {
+  margin-top: 24px;
+}
+
 /* Sections */
 
 .section {
