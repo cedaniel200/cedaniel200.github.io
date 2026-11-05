@@ -6,6 +6,7 @@ Sitio estático de TechCodeTest: consultoría de software y división móvil. Es
 
 ```text
 /
+├── 404.html
 ├── index.html
 ├── apps/index.html
 ├── apps/fases-lunares/index.html
@@ -14,10 +15,14 @@ Sitio estático de TechCodeTest: consultoría de software y división móvil. Es
 ├── privacy/en/index.html       # Privacy Policy (EN)
 ├── terms/index.html            # Términos de uso (ES)
 ├── terms/en/index.html         # Terms of Use (EN)
+├── assets/og-image.png
 ├── assets/styles.css
+├── assets/icons/apple-touch-icon.png
+├── assets/icons/favicon-32x32.png
 ├── assets/icons/favicon.svg
 ├── assets/icons/monogram.svg
 ├── app-ads.txt                 # Marcador de posición para AdMob
+├── favicon.ico
 ├── robots.txt
 ├── sitemap.xml
 └── README.md
