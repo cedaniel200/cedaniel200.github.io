@@ -12,7 +12,8 @@ Sitio estático de TechCodeTest: consultoría de software y división móvil. Es
 ├── apps/oraciones/index.html
 ├── privacy/index.html          # Política de privacidad (ES)
 ├── privacy/en/index.html       # Privacy Policy (EN)
-├── terms/index.html            # Términos de uso (borrador)
+├── terms/index.html            # Términos de uso (ES)
+├── terms/en/index.html         # Terms of Use (EN)
 ├── assets/styles.css
 ├── assets/icons/favicon.svg
 ├── assets/icons/monogram.svg
@@ -37,7 +38,7 @@ Abre <http://localhost:8000>. No hace falta instalar nada.
 - **Inicio** (`/`): servicios, división de apps, enfoque y contacto.
 - **Apps** (`/apps/`): catálogo de productos propios y páginas de detalle de cada app.
 - **Privacidad** (`/privacy/` y `/privacy/en/`): política en español e inglés, con selector de idioma.
-- **Términos** (`/terms/`): borrador de términos de uso.
+- **Términos** (`/terms/` y `/terms/en/`): términos de uso en español e inglés.
 
 El texto de la política de privacidad es una copia del documento publicado en
 `https://raw.githubusercontent.com/cedaniel200/privacy-policy/main/index.html`, con el nombre
