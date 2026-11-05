@@ -13,6 +13,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://cedaniel200.github.io/apps/fases-lunares/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://cedaniel200.github.io/apps/oraciones/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://cedaniel200.github.io/privacy/</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>yearly</changefreq>

@@ -8,6 +8,8 @@ Sitio estático de TechCodeTest: consultoría de software y división móvil. Es
 /
 ├── index.html
 ├── apps/index.html
+├── apps/fases-lunares/index.html
+├── apps/oraciones/index.html
 ├── privacy/index.html          # Política de privacidad (ES)
 ├── privacy/en/index.html       # Privacy Policy (EN)
 ├── terms/index.html            # Términos de uso (borrador)
@@ -32,7 +34,7 @@ Abre <http://localhost:8000>. No hace falta instalar nada.
 ## Contenido
 
 - **Inicio** (`/`): servicios, división de apps, enfoque y contacto.
-- **Apps** (`/apps/`): catálogo de productos propios y enlace a la política de privacidad.
+- **Apps** (`/apps/`): catálogo de productos propios y páginas de detalle de cada app.
 - **Privacidad** (`/privacy/` y `/privacy/en/`): política en español e inglés, con selector de idioma.
 - **Términos** (`/terms/`): borrador de términos de uso.
 
