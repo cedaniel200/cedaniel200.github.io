@@ -40,13 +40,11 @@ Abre <http://localhost:8000>. No hace falta instalar nada.
 - **Privacidad** (`/privacy/` y `/privacy/en/`): política en español e inglés, con selector de idioma.
 - **Términos** (`/terms/` y `/terms/en/`): términos de uso en español e inglés.
 
-El texto de la política de privacidad es una copia del documento publicado en
-`https://raw.githubusercontent.com/cedaniel200/privacy-policy/main/index.html`, con el nombre
-comercial, la fecha y el contacto actualizados. No edites su contenido legal sin aprobación.
+El texto de la política de privacidad se basa en el documento original del titular. No edites su contenido legal sin aprobación.
 
 ## Notas internas
 
-Términos: borrador revisado por el usuario; no constituye asesoría legal.
+Términos: revisados por el usuario; no constituyen asesoría legal.
 
 ## Publicación
 
