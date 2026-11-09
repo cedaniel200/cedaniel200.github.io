@@ -2073,43 +2073,43 @@ h3 {
   color: var(--on-ink);
 }
 
-.tct-service-featured {
+.tct-service-row {
   display: grid;
-  grid-template-columns: minmax(0, 4fr) minmax(0, 5fr) minmax(0, 3fr);
-  gap: var(--space-xl);
-  padding-block: var(--space-2xl);
-  border-top: 2px solid var(--ink);
-}
-
-.tct-service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 4fr) minmax(0, 6fr) minmax(0, 2fr);
+  gap: var(--space-lg);
+  align-items: start;
+  padding-block: var(--space-md);
   border-top: 1px solid var(--rule);
 }
 
-.tct-service {
-  padding: var(--space-xl) var(--space-lg);
+.tct-service-row--featured {
+  padding-block: calc(var(--space-4xl) + var(--space-2xl));
+  border-top: 2px solid var(--ink);
 }
 
-.tct-service-grid .tct-service + .tct-service {
-  border-left: 1px solid var(--rule);
+.tct-service-row:last-child {
+  border-bottom: 1px solid var(--rule);
 }
 
-.tct-service-head {
+.tct-service-title {
   display: flex;
   align-items: baseline;
   gap: var(--space-md);
 }
 
-.tct-service-head h3 {
+.tct-service-title h3 {
   font-size: var(--font-title-size);
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: -0.005em;
 }
 
+.tct-service-detail {
+  min-width: 0;
+}
+
 .tct-service-scope {
-  margin-top: var(--space-md);
+  margin: 0;
   max-width: 40rem;
   color: var(--muted);
   font-size: var(--font-body-size);
@@ -2133,9 +2133,7 @@ h3 {
 }
 
 .tct-deliverable {
-  margin-top: var(--space-lg);
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--rule);
+  margin: 0;
   color: var(--ink);
   font-size: var(--font-body-size);
   line-height: 1.6;
@@ -2461,25 +2459,6 @@ h3 {
   }
 }
 
-@media (max-width: 1023px) {
-  .tct-service-featured {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  }
-
-  .tct-service-featured .tct-deliverable {
-    grid-column: 1 / -1;
-  }
-
-  .tct-service-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tct-service-grid .tct-service + .tct-service {
-    border-left: 0;
-    border-top: 1px solid var(--rule);
-  }
-}
-
 @media (max-width: 767px) {
   .tct-header-inner {
     display: grid;
@@ -2533,14 +2512,18 @@ h3 {
     min-height: 40px;
   }
 
-  .tct-service-featured {
+  .tct-service-row {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-sm);
+    padding-block: var(--space-lg);
+  }
+
+  .tct-service-row--featured {
     padding-block: var(--space-xl);
   }
 
-  .tct-service {
-    padding: var(--space-lg) 0;
+  .tct-service-row .tct-deliverable {
+    margin-top: var(--space-md);
   }
 
   .tct-method {
