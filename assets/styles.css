@@ -300,9 +300,10 @@ a {
   text-decoration: none;
 }
 
-.tct-brand-mark {
+.brand-mark {
   width: 32px;
   height: 32px;
+  color: var(--ink);
 }
 
 .tct-nav {
