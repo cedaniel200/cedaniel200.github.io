@@ -37,7 +37,6 @@
   --space-4xl: 80px;
   --space-5xl: 112px;
 
-  --radius-none: 0px;
   --radius-sm: 2px;
   --radius-pill: 999px;
 
@@ -55,9 +54,7 @@
 
   --dur-fast: 120ms;
   --dur-base: 160ms;
-  --dur-exit: 90ms;
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
-  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 
   --tct-container: 1208px;
   --tct-gutter: 24px;
@@ -291,6 +288,7 @@ a {
 }
 
 .tct-brand {
+  order: 1;
   display: inline-flex;
   align-items: center;
   gap: var(--space-sm);
@@ -307,6 +305,7 @@ a {
 }
 
 .tct-nav {
+  order: 2;
   display: flex;
   align-items: center;
   gap: var(--space-lg);
@@ -363,6 +362,7 @@ a {
 }
 
 .tct-mode-button {
+  order: 3;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -390,6 +390,7 @@ a {
 }
 
 .tct-cta {
+  order: 4;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -462,8 +463,8 @@ a {
 /* Sin :has() y sin JavaScript no se deja un control muerto. */
 
 @supports not selector(:has(*)) {
-  .tct-mode-input,
-  .tct-mode-button {
+  :root:not([data-theme]) .tct-mode-input,
+  :root:not([data-theme]) .tct-mode-button {
     display: none;
   }
 }
@@ -637,7 +638,7 @@ a {
 
 .tct-service-scope {
   margin: 0;
-  max-width: 40rem;
+  max-width: 36rem;
   color: var(--muted);
   font-size: var(--font-body-size);
   line-height: 1.6;
@@ -1611,7 +1612,15 @@ a {
 
 @media (max-width: 767px) {
   .tct-app-table thead {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
   }
 
   .tct-app-table,
@@ -1638,10 +1647,15 @@ a {
     margin-top: var(--space-sm);
   }
 
-  .tct-app-table tbody td::before {
-    content: attr(data-label);
+  .tct-app-table tbody td .tct-visually-hidden {
+    position: static;
     display: block;
-    margin-bottom: 2px;
+    width: auto;
+    height: auto;
+    margin: 0 0 2px;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
     color: var(--muted);
     font-family: var(--font-mono);
     font-size: var(--font-label-size);
@@ -1667,6 +1681,13 @@ a {
     padding: 0;
   }
 
+  .tct-legal-content h2,
+  .tct-legal-content p,
+  .tct-legal-content ul {
+    max-width: 33.5rem;
+    margin-inline: auto;
+  }
+
   .tct-page-hero,
   .tct-legal-hero {
     padding-block: var(--space-2xl) var(--space-xl);
@@ -1686,9 +1707,7 @@ a {
    ========================================================================== */
 
 @media print {
-  :root,
-  :root[data-theme="dark"],
-  :root:has(.tct-mode-input:checked) {
+  :is(:root, :root[data-theme="dark"], :root:has(.tct-mode-input:checked)) {
     color-scheme: light;
     --bg: #fff;
     --surface: #fff;
@@ -1779,11 +1798,10 @@ a {
     text-decoration: underline;
   }
 
-  .tct-legal-content a[href^="http"]::after,
-  .tct-legal-content a[href^="mailto:"]::after {
+  a[href]:not([href^="#"])::after {
     content: " (" attr(href) ")";
     font-size: 0.85em;
-    word-break: break-all;
+    overflow-wrap: anywhere;
   }
 
   .tct-chapter {
@@ -1872,5 +1890,13 @@ a {
   .tct-cta,
   .tct-button {
     transition-duration: 0.01ms;
+  }
+}
+
+/* En tablet la columna de detalle del servicio es estrecha; un tracking
+   ligeramente negativo mantiene la medida de lectura sin cambiar la 4/6/2. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tct-service-scope {
+    letter-spacing: -0.02em;
   }
 }
