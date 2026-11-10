@@ -53,69 +53,43 @@
   </header>
 
   <main id="main" tabindex="-1">
-    <section class="page-header" aria-labelledby="apps-title">
-      <div class="container">
-        <p class="eyebrow">División móvil</p>
+    <section class="tct-page-hero" aria-labelledby="apps-title">
+      <div class="tct-container">
+        <p class="tct-label">PRODUCTOS PROPIOS</p>
         <h1 id="apps-title">Apps</h1>
-        <p class="lede">Productos propios de la división móvil.</p>
+        <p class="tct-lede">Dos apps en preparación, sin cuentas innecesarias ni ruido.</p>
       </div>
     </section>
 
-    <section class="section-tight" aria-label="Catálogo de apps">
-      <div class="container">
-        <div class="app-grid">
-          <article class="app-card">
-            <div class="app-visual" aria-hidden="true">
-              <div class="moon-phases">
-                <span class="moon-phase moon-phase-new"></span>
-                <span class="moon-phase moon-phase-waxing"></span>
-                <span class="moon-phase moon-phase-half"></span>
-                <span class="moon-phase moon-phase-full"></span>
-              </div>
-            </div>
-            <div class="app-content">
-              <div class="app-title-row">
-                <h2 class="app-name">Fases Lunares</h2>
-                <span class="status status-relaunch">En relanzamiento</span>
-              </div>
-              <p>Fases, lunas y calendario; sin cuentas ni ruido.</p>
-              <div class="app-links">
-                <a class="text-link" href="/apps/fases-lunares/">Ver detalle <span aria-hidden="true">→</span></a>
-                <a class="text-link text-link-secondary" href="/privacy/">Privacidad <span aria-hidden="true">→</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="app-card">
-            <div class="app-visual" aria-hidden="true">
-              <div class="reminder">
-                <span class="reminder-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" focusable="false">
-                    <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9"></path>
-                    <path d="M10 21h4"></path>
-                  </svg>
-                </span>
-                <span>
-                  <span class="reminder-title">Recordatorios locales</span>
-                  <span class="reminder-sub">Contenido religioso</span>
-                </span>
-              </div>
-            </div>
-            <div class="app-content">
-              <div class="app-title-row">
-                <h2 class="app-name">Oraciones infaltables</h2>
-                <span class="status">En diseño</span>
-              </div>
-              <p>Contenido religioso y recordatorios locales.</p>
-              <div class="app-links">
-                <a class="text-link" href="/apps/oraciones/">Ver detalle <span aria-hidden="true">→</span></a>
-                <a class="text-link text-link-secondary" href="/privacy/">Privacidad <span aria-hidden="true">→</span></a>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <p class="index-note">Las fichas en tiendas se publicarán cuando cada app esté disponible. Mientras tanto, puedes consultar la política de privacidad que aplica a ambas.</p>
+    <section class="tct-plate" aria-labelledby="registro-title">
+      <div class="tct-container">
+        <h2 id="registro-title" class="tct-label">Registro</h2>
+        <table class="tct-app-table">
+          <caption class="tct-visually-hidden">Registro de apps: nombre, estado, plataformas y qué hace</caption>
+          <thead>
+            <tr>
+              <th scope="col">App</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Plataformas</th>
+              <th scope="col">Qué hace</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="tct-app-name"><a href="/apps/fases-lunares/">Fases Lunares</a></th>
+              <td data-label="Estado"><span class="tct-status"><span class="tct-status-dot" aria-hidden="true"></span>En relanzamiento</span></td>
+              <td data-label="Plataformas">Android</td>
+              <td data-label="Qué hace">Fases, lunas y calendario; sin cuentas ni ruido.</td>
+            </tr>
+            <tr>
+              <th scope="row" class="tct-app-name"><a href="/apps/oraciones/">Oraciones infaltables</a></th>
+              <td data-label="Estado"><span class="tct-status"><span class="tct-status-dot" aria-hidden="true"></span>En diseño</span></td>
+              <td data-label="Plataformas">Android</td>
+              <td data-label="Qué hace">Contenido religioso y recordatorios locales.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="tct-note">Las fichas en tiendas se publicarán cuando cada app esté disponible. Mientras tanto, puedes consultar la <a class="tct-link" href="/privacy/">política de privacidad</a> que aplica a ambas.</p>
       </div>
     </section>
   </main>
