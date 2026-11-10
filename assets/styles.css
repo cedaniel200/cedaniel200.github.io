@@ -500,6 +500,8 @@ a {
   display: inline-flex;
   align-items: center;
   min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
   color: var(--ink);
   text-decoration: none;
 }
@@ -774,7 +776,7 @@ a {
 }
 
 .tct-trajectory-row p {
-  max-width: 40rem;
+  max-width: 36rem;
   color: var(--ink);
   font-size: var(--font-body-size);
   line-height: 1.6;
@@ -905,6 +907,12 @@ a {
 .tct-contact p {
   margin-top: var(--space-md);
   font-size: var(--font-lede-size);
+  overflow-wrap: anywhere;
+}
+
+.tct-contact .tct-link {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 /* Botones y enlaces nuevos */
@@ -1157,6 +1165,7 @@ a {
 }
 
 .tct-status {
+  max-width: 100%;
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
@@ -1169,7 +1178,8 @@ a {
   line-height: 1.45;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .tct-status .tct-status-dot {
@@ -1218,6 +1228,7 @@ a {
 .tct-app-table tbody th,
 .tct-app-table tbody td {
   padding: var(--space-lg) var(--space-md) var(--space-lg) 0;
+  overflow-wrap: anywhere;
   border-bottom: 1px solid var(--rule);
   vertical-align: top;
   font-size: var(--font-body-size);
@@ -1315,6 +1326,7 @@ a {
 
 .tct-facts dd {
   margin: var(--space-xs) 0 0;
+  overflow-wrap: anywhere;
   font-size: var(--font-body-size);
   line-height: 1.6;
 }
@@ -1342,6 +1354,7 @@ a {
 
 .tct-legal-meta {
   margin-top: var(--space-xl);
+  overflow-wrap: anywhere;
   max-width: 38rem;
   padding-block: var(--space-md);
   border-block: 1px solid var(--rule);
@@ -1408,7 +1421,7 @@ a {
 
 .tct-legal-layout {
   display: grid;
-  grid-template-columns: 220px minmax(0, calc(38rem + 2 * var(--space-3xl)));
+  grid-template-columns: 220px minmax(0, calc(33.5rem + 2 * var(--space-3xl)));
   gap: var(--space-2xl);
   align-items: start;
   justify-content: center;
@@ -1455,8 +1468,9 @@ a {
 }
 
 .tct-legal-content {
-  max-width: calc(38rem + 2 * var(--space-3xl));
+  max-width: calc(33.5rem + 2 * var(--space-3xl));
   padding: var(--space-3xl);
+  overflow-wrap: anywhere;
   background: var(--plate);
   color: var(--ink);
   font-size: 1.125rem;
